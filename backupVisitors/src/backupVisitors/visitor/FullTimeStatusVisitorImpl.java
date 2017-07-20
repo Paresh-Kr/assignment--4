@@ -23,6 +23,10 @@ public class FullTimeStatusVisitorImpl implements TreeVisitorI
 			{
 				b.updateTreenode(node,k,"S",1);
 			}
+			
+			findfulltime(b,node.getLeftChild());
+			findfulltime(b,node.getRightChild());
+
 		}
 	}
 	
