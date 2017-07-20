@@ -2,6 +2,6 @@ package backupVisitors.myTree;
 
 public interface ObserverI {
 	
-	public void updateValue(int nodevalue,String course);
+	void updateValue(int Bval, String Course, int flag);
 	
 }

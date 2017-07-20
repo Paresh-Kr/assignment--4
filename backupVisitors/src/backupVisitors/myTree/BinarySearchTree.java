@@ -1,6 +1,8 @@
 package backupVisitors.myTree;
 
 import backupVisitors.util.Results;
+import backupVisitors.visitor.TreeVisitorI;
+
 import java.util.StringJoiner;
 
 
@@ -52,7 +54,7 @@ public class BinarySearchTree {
 			}else
 			{
 				//update tree for duplicate entry
-				updateTreenode(currentNode,currentNode.getBNumber(),currentNode.getCourse());
+				updateTreenode(currentNode,currentNode.getBNumber(),currentNode.getCourse(),1);
 				return;
 			}
 		}
@@ -82,14 +84,15 @@ public class BinarySearchTree {
 			{
 				//System.out.println("Bvalue matched--"+currentNode.getBNumber()+ "Actual Course "+currentNode.getCourse()+"----delete course value--"+Course);
 				try{
-					if(currentNode.getCourse() !=null & Course !=null){
-				if(currentNode.getCourse().equals(Course))
-				{
+					if(currentNode.getCourseList(Bnumber) !=null &&!currentNode.getCourseList(Bnumber).isEmpty() && Course !=null){
+				
 				 // System.out.println("delete course matched");
 				//update tree with null as Course
-				updateTreenode(currentNode,currentNode.getBNumber(),null);
+					for (int i = 0; i < currentNode.getCourseList(Bnumber).size(); i++) {
+						  if(currentNode.getCourseList(Bnumber).get(i).equals(Course))
+								updateTreenode(currentNode,currentNode.getBNumber(),Course,0);
+					}
 				}
-			}
 				return;
 				}catch(Exception e)
 				{
@@ -101,16 +104,23 @@ public class BinarySearchTree {
 	}
 	
 	//update binary tree with duplicate Bnumber
-		public void updateTreenode (Node node,int ival,String course){
-			
-			if(node!=null)
+		public void updateTreenode (Node node,int ival,String course,int flag){
+			int val=flag;
+			if(node!=null & course !=null )
 			{
-				node.updateValue(ival,course); 
+				node.updateValue(ival,course,val); 
 				node.notifyAll(ival,course);
 			}
 
 		}
 
+		
+
+	public void accept (TreeVisitorI vi)
+		{
+			vi.visit(this);
+		}
+		
      public void traversal(int treenum)
      {
     	 inorder(root,treenum);
@@ -130,7 +140,8 @@ public class BinarySearchTree {
     		    	String joined = joiner.toString(); 
     		    	rslt.storeNewResult(joined,k);
     		    }else if(k==1)
-    		    {StringJoiner joiner = new StringJoiner(":");
+    		    {
+    		    StringJoiner joiner = new StringJoiner(":");
 		    	joiner.add(new Integer(node.getBNumber()).toString());
 		    	joiner.add(node.getCourse());
 		    	String joined = joiner.toString(); 
