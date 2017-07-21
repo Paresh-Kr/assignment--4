@@ -3,7 +3,7 @@ package backupVisitors.visitor;
 import java.util.StringJoiner;
 
 import backupVisitors.myTree.BinarySearchTree;
-import src.backupVisitors.myTree.Node;
+import backupVisitors.myTree.Node;
 
 public class SortedRecordsVisitorImpl implements TreeVisitorI
 
@@ -22,7 +22,7 @@ public class SortedRecordsVisitorImpl implements TreeVisitorI
     	 if(node !=null)
     	 {
     		 postorder(node.getRightChild(),k);
-
+             /*
     		    if(k==0)
     		    {
     		    	StringJoiner joiner = new StringJoiner(":");
@@ -50,6 +50,8 @@ public class SortedRecordsVisitorImpl implements TreeVisitorI
 		    	String joined = joiner.toString(); 
 		    	rslt.storeNewResult(joined,k);
     		    }
+    		    
+    		    */
     		    postorder(node.getLeftChild(),k);
 
     	 }
