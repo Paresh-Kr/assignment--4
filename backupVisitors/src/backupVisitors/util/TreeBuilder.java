@@ -1,8 +1,14 @@
 package backupVisitors.util;
 
+import java.util.concurrent.TimeUnit;
+
 import backupVisitors.myTree.BinarySearchTree;
+import backupVisitors.myTree.Node;
 import backupVisitors.util.FileProcessor;
-import backupVisitors.myTree.*;
+import backupVisitors.visitor.FullTimeStatusVisitorImpl;
+import backupVisitors.visitor.IdenticalRecordsVisitorImpl;
+import backupVisitors.visitor.SortedRecordsVisitorImpl;
+import backupVisitors.visitor.StatsVisitorImpl;
 
 public class TreeBuilder {
 	private FileProcessor fp=null;	
@@ -32,7 +38,6 @@ public class TreeBuilder {
 
 		
 
-		
 		String str;
 		while ((str = fp.readLine()) != null)
 		{ 
@@ -60,6 +65,7 @@ public class TreeBuilder {
 			Node_orig.insert(Ori_node);
 			backup_Node_1.insert(Node_1);
 			backup_Node_2.insert(Node_2);
+			
 		}
 	}
 	// for Deleting Course
@@ -78,13 +84,13 @@ public class TreeBuilder {
 				bnumber = Integer.parseInt(tokens[0]);
 				//System.out.println("-delete---------number-----"+ bnumber +"---string value---"+tokens[1]);
 				Course =tokens[1].toString();
-				Node_orig.delete(Node_orig.getroot(),bnumber, Course);
+				//Node_orig.delete(Node_orig.getroot(),bnumber, Course);
 			}catch(NumberFormatException e){
 				e.printStackTrace();
 				System.exit(1);
 			}
 			
-			//Node_orig.delete( Node_orig.getroot(),bnumber, Course);
+			Node_orig.delete( Node_orig.getroot(),bnumber, Course);
 			backup_Node_1.delete( Node_orig.getroot(),bnumber, Course);
 			backup_Node_2.delete( Node_orig.getroot(),bnumber, Course);
 			
@@ -92,5 +98,28 @@ public class TreeBuilder {
 		
  	
 	}
+	
+	public void fulltimestatusvisitor()
+	{
+		FullTimeStatusVisitorImpl fs = new FullTimeStatusVisitorImpl();
+		Node_orig.accept(fs);
+	}
+	public void identicalrecordsvisitor()
+	{
+		IdenticalRecordsVisitorImpl Ir = new IdenticalRecordsVisitorImpl();
+		Node_orig.accept(Ir);
+	}
+	public void startsvisitor()
+	{
+		StatsVisitorImpl Ss = new StatsVisitorImpl();
+		backup_Node_1.accept(Ss);
+		
+	}
+	public void sortedrecordvistor()
+	{
+		SortedRecordsVisitorImpl Sr = new SortedRecordsVisitorImpl();
+		backup_Node_1.accept(Sr);
+	}
+	
 	
 }

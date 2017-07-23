@@ -15,8 +15,8 @@ public class Node implements ObserverI,SubjectI{
 	private Node left_child=null;
 	private Node right_child=null;
 	
-	private HashMap<Integer,ArrayList<String>>Data= new HashMap<Integer,ArrayList<String>>();
-	private ArrayList<String>CourseList= new ArrayList<String>();
+	private HashMap<Integer,ArrayList<String>>Data;//= new HashMap<Integer,ArrayList<String>>();
+	private ArrayList<String>CourseList;//= new ArrayList<String>();
 	
 	// private  ArrayList<Integer,String> list = new ArrayList<Integer,String>();
 	//Map<Integer,List<Integer>> Data = new Map<Integer,List<Integer>>();
@@ -31,8 +31,10 @@ public class Node implements ObserverI,SubjectI{
 		this.left_child=null;
 		this.right_child=null;
 		this.Course=Course;
-		//CourseList= new ArrayList<String>();
-		//Data= new HashMap<Integer,ArrayList<String>>();
+		CourseList= new ArrayList<String>();
+		Data= new HashMap<Integer,ArrayList<String>>();
+		CourseList.add(Course);
+		this.setCourseList(Bnum, CourseList);
 	}
 	//getter setter for all value of node
 	
@@ -113,40 +115,47 @@ public class Node implements ObserverI,SubjectI{
 
 		if(Course !=null){
           x=Course;
-		if(flag == 1 && null != this.getCourseList(Bval) && !this.getCourseList(Bval).isEmpty()){
+		if(flag == 1)
+		{
+			if( null != this.getCourseList(Bval) && !this.getCourseList(Bval).isEmpty()){
 		this.setBNumber(Bval);
 		/* have add all Course*/
 		this.getCourseList(Bval).add(x);
 		this.setCourseList(Bval, this.getCourseList(Bval));
 		this.setCourse(x);
+		}else{
+			 // System.out.println("Course List is Empty,----------------one value update");
+
+			this.setBNumber(Bval);
+			ArrayList<String>cl=new ArrayList<String>();
+			   cl.add(x);
+			Data.put(Bval, cl); //no ArrayList assigned, create new ArrayList
+			this.setCourse(x);
+			//map.get(id).add(value);
+			return;
+		     }
 		}else if(flag == 0 )
 		{
 			this.setBNumber(Bval);
 			/* have add all Course*/
-			  if(this.getCourseList(Bval).isEmpty()){
+			  if(!this.getCourseList(Bval).isEmpty()){
 			this.getCourseList(Bval).remove(x);
 			this.setCourseList(Bval, this.getCourseList(Bval));
 			this.setCourse(x);
+			  //System.out.println("Course List is---------"+this.getCourseList(Bval));
 
 			  }else
 			  {
 				  System.out.println("Course List is Empty, Can't be delete");
+				    return;
 			  }
-		}else
-		{
-			if( null != this.getCourseList(Bval) && !this.getCourseList(Bval).isEmpty()){
-			this.setBNumber(Bval);
-			/* have add all Course*/
-			this.getCourseList(Bval).add(x);
-			this.setCourseList(Bval, this.getCourseList(Bval));
-			this.setCourse(x);
 		}
-		}
-		
 		}else
 		{
 			//do nothing
 		}
+		
+		// System.out.println("----Course List from  updateValue ----"+Bval+"------"+this.getCourseList(Bval));;
 	}
 
 	@Override
@@ -157,7 +166,7 @@ public class Node implements ObserverI,SubjectI{
 		 {
 			if(key.getValue().compareTo(updatevalue)==0) 
 			{
-				key.getKey().updateValue(updatevalue, Course_no,1);
+				key.getKey().updateValue(updatevalue, Course_no,2);
 			}
 		 }
 

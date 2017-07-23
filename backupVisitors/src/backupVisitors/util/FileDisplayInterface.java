@@ -13,7 +13,7 @@ public interface FileDisplayInterface
 public static void writeToFile(String s,int val)
 {
 	if(val==0){
-		try(    FileWriter fw = new FileWriter("ouput1.txt", true);
+		try(    FileWriter fw = new FileWriter("stats.txt", true);
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))
 			{
@@ -22,9 +22,9 @@ public static void writeToFile(String s,int val)
 				System.out.println("Exception Happened in file File write");
 			}
 	}
-	// output1
+	// sorted
 		else if(val==1){
-			try(FileWriter fw = new FileWriter("ouput2.txt", true);
+			try(FileWriter fw = new FileWriter("sorted.txt", true);
 				    BufferedWriter bw = new BufferedWriter(fw);
 				    PrintWriter out = new PrintWriter(bw))
 				{
@@ -33,9 +33,9 @@ public static void writeToFile(String s,int val)
 					System.out.println("Exception Happened in file File write");
 				}
 		}
-	//output2
+	//identical
 	if(val==2){
-		try(FileWriter fw = new FileWriter("ouput3.txt", true);
+		try(FileWriter fw = new FileWriter("identical.txt", true);
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))
 			{

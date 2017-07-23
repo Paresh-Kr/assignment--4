@@ -28,7 +28,7 @@ public class Driver
 		{
 			System.out.println("Entered More than five file");
 			System.exit(1);
-		}else if( args.length==5)
+		}else if( args.length==5 || args.length==5)
 		{
 			// fp= new FileProcessor(args[0],args[1]);
 			// fp= new FileProcessor(args[0],args[1],args[2],args[3],args[4]);
@@ -47,25 +47,42 @@ public class Driver
 		BinarySearchTree backup2 = new BinarySearchTree();
 		TreeBuilder Builder = new TreeBuilder(rslt ,Orig, backup1,backup2,Inputfile,Deletefile,Outputfile1,Outputfile2,Outputfile3);
 		Builder.readNode(); 
-		System.out.println("\n ::::---After Input.txt read-----Original tree--- \n");
-
-		Orig.traversal(3);
-		Builder.deletenode();
 		
-		System.out.println("\n ::::---After Delete.txt read-----Original tree--- \n");
-		Orig.traversal(0);
+
+		  Builder.deletenode();
+		  Orig.traversal(3);
+		  System.out.println("\n::::----fulltimestatusvisitor------  ");
+
+		 // Builder.fulltimestatusvisitor();
+		  System.out.println("\n ::::---After fulltimestatusvisitor----Original tree--- \n");
+			 Orig.traversal(3);
+			System.out.println("\n ::::----identicalrecordsvisitor-----  ");
+
+		     Builder.identicalrecordsvisitor();
+			System.out.println("\n::::----startsvisitor----------  ");
+
+		     Builder.startsvisitor();
+			System.out.println("\n::::----sortedrecordvistor-----  ");
+
+		     Builder.sortedrecordvistor();
+
+
 		
-		System.out.println(" \n::::---After Delete.txt read-----Backup_1 tree--- \n");
+		
+		//System.out.println("\n ::::---After Delete.txt read-----Original tree--- \n");
+		//Orig.traversal(0);
+		
+		//System.out.println(" \n::::---After Delete.txt read-----Backup_1 tree--- \n");
 
-		backup1.traversal(1);
-		System.out.println(" \n::::---After Delete.txt read-----Backup_2 tree--- \n");
+		//backup1.traversal(1);
+		//System.out.println(" \n::::---After Delete.txt read-----Backup_2 tree--- \n");
 
-		backup2.traversal(2);
+		//backup2.traversal(2);
 		
 		//
 		//
 		}else{
-			System.out.println("Please follow Instruction and give five input ");
+			System.out.println("Please follow Instruction and give five input as argument ");
 	
 		}
 	}

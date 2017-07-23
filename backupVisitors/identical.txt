@@ -1,0 +1,361 @@
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group1 - 6335
+Group2 - 3049 , 1839
+Group3 - 2849 , 5989 , 3609
+Group4 - 3381
+Group5 - 9058
+Group6 - 6858 , 8266 , 7200
+Group1 - 6335
+Group2 - 3049 , 1839
+Group3 - 2849 , 5989 , 3609
+Group4 - 3381
+Group5 - 9058
+Group6 - 6858 , 8266 , 7200
+Group1 - 6335
+Group2 - 3049 , 1839
+Group3 - 2849 , 5989 , 3609
+Group4 - 3381
+Group5 - 9058
+Group6 - 6858 , 8266 , 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group1 - 6335
+Group1 - 6335 - Group1Group2 - 6335 , 3049
+Group1 - 6335 - Group1Group2 - 6335 , 3049 - Group1Group2Group3 - 6335 , 3049 , 1839 , 2849
+Group1 - 6335 - Group1Group2 - 6335 , 3049 - Group1Group2Group3 - 6335 , 3049 , 1839 , 2849 - Group1Group2Group3Group4 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381
+Group1 - 6335 - Group1Group2 - 6335 , 3049 - Group1Group2Group3 - 6335 , 3049 , 1839 , 2849 - Group1Group2Group3Group4 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 - Group1Group2Group3Group4Group5 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058
+Group1 - 6335 - Group1Group2 - 6335 , 3049 - Group1Group2Group3 - 6335 , 3049 , 1839 , 2849 - Group1Group2Group3Group4 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 - Group1Group2Group3Group4Group5 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058 - Group1Group2Group3Group4Group5Group6 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058 , 6858
+Group1 - 6335 - Group1Group2 - 6335 , 3049 - Group1Group2Group3 - 6335 , 3049 , 1839 , 2849 - Group1Group2Group3Group4 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 - Group1Group2Group3Group4Group5 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058 - Group1Group2Group3Group4Group5Group6 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058 , 6858 - Group1Group2Group3Group4Group5Group6Group7 - 6335 , 3049 , 1839 , 2849 , 5989 , 3609 , 3381 , 9058 , 6858 , 8266 , 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group0 - 6335 , 3049 , 1839 , 2849
+Group1 - 5989 , 3609
+Group2 - 3381
+Group3 - 9058 , 6858 , 8266 , 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group3 - 2849
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989
+Group5 - 3609
+Group6 - 3381
+Group7 - 9058
+Group8 - 6858
+Group9 - 8266
+Group10 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839
+Group4 - 2849
+Group5 - 5989
+Group6 - 3609
+Group7 - 3381
+Group8 - 9058
+Group9 - 6858
+Group10 - 8266
+Group11 - 7200
+Group1 - 6335
+Group2 - 3049 , 1839 , 2849 , 5989
+Group3 - 3609
+Group4 - 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266
+Group8 - 7200
+Group1 - 6335
+Group2 - 3049
+Group3 - 1839 , 2849
+Group4 - 5989 , 3609 , 3381
+Group5 - 9058
+Group6 - 6858
+Group7 - 8266 , 7200
+Group1 - 6335
+Group2 - 3049 , 1839
+Group3 - 2849 , 5989 , 3609
+Group4 - 3381
+Group5 - 9058
+Group6 - 6858 , 8266 , 7200
+Group0 - 6335
+Group1 - 3049
+Group2 - 1839 , 2849
+Group3 - 5989 , 3609 , 3381
+Group4 - 9058
+Group5 - 6858
+Group6 - 8266 , 7200
+Group0 - 6335
+Group1 - 3049
+Group2 - 1839 , 2849
+Group3 - 5989 , 3609 , 3381
+Group4 - 9058
+Group5 - 6858
+Group6 - 8266 , 7200
+Group0 - 6335
+Group1 - 3049
+Group2 - 1839 , 2849
+Group3 - 5989 , 3609 , 3381
+Group4 - 9058
+Group5 - 6858
+Group6 - 8266 , 7200

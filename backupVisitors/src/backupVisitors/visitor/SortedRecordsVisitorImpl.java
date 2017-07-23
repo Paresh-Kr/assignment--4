@@ -1,6 +1,10 @@
 package backupVisitors.visitor;
 
+import java.util.Collections;
+import java.util.Enumeration;
 import java.util.StringJoiner;
+
+import backupVisitors.util.Results;
 
 import backupVisitors.myTree.BinarySearchTree;
 import backupVisitors.myTree.Node;
@@ -8,50 +12,43 @@ import backupVisitors.myTree.Node;
 public class SortedRecordsVisitorImpl implements TreeVisitorI
 
 {
+	Results rslt=new Results();
+
 	
 	public void visit(BinarySearchTree Btree)
 	{
 		//implement
+
 		Node nd= Btree.getroot();
-		postorder(nd,2);
+		postorder(nd,1);
 	}
 	
-	 public void postorder(Node node, int k)
+	 public void postorder(Node node,int k)
      {
     	//
     	 if(node !=null)
     	 {
+    		 
+
     		 postorder(node.getRightChild(),k);
-             /*
-    		    if(k==0)
-    		    {
-    		    	StringJoiner joiner = new StringJoiner(":");
-    		    	joiner.add(new Integer(node.getBNumber()).toString());
-    		    	joiner.add(node.getCourse());
-    		    	String joined = joiner.toString(); 
-    		    	rslt.storeNewResult(joined,k);
-    		    }else if(k==1)
-    		    {
-    		    StringJoiner joiner = new StringJoiner(":");
-		    	joiner.add(new Integer(node.getBNumber()).toString());
-		    	joiner.add(node.getCourse());
-		    	String joined = joiner.toString(); 
-		    	rslt.storeNewResult(joined,k);
-    		    }else if(k==2)
-    		    {StringJoiner joiner = new StringJoiner(":");
-		    	joiner.add(new Integer(node.getBNumber()).toString());
-		    	joiner.add(node.getCourse());
-		    	String joined = joiner.toString(); 
-		    	rslt.storeNewResult(joined,k);
-    		    }else if(k==3)
-    		    {StringJoiner joiner = new StringJoiner(":");
-		    	joiner.add(new Integer(node.getBNumber()).toString());
-		    	joiner.add(node.getCourse());
-		    	String joined = joiner.toString(); 
-		    	rslt.storeNewResult(joined,k);
-    		    }
-    		    
-    		    */
+    		 int key = node.getBNumber();
+ 			StringBuilder stringBuilder = new StringBuilder();
+ 			int l = node.getBNumber();
+ 			StringJoiner joiner = new StringJoiner(" :: ");
+ 			Enumeration<String> e = Collections.enumeration(node.getCourseList(l));
+ 			while (e.hasMoreElements()) {
+
+ 				stringBuilder.append(e.nextElement());
+ 			}
+
+ 			String finalString = stringBuilder.toString();
+
+ 			joiner.add(new Integer(node.getBNumber()).toString());
+
+ 			joiner.add(finalString.toString());
+ 			String joined = joiner.toString();
+ 			rslt.storeNewResult(joined, k);
+            
     		    postorder(node.getLeftChild(),k);
 
     	 }
